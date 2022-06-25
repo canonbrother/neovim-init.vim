@@ -204,6 +204,16 @@ nmap <S-Tab> :bprevious<CR>
 nmap <leader>$s <C-w>s<C-w>j:terminal<CR>:set nonumber<CR><S-a>
 nmap <leader>$v <C-w>v<C-w>l:terminal<CR>:set nonumber<CR><S-a>
 
+" Copy Paste from clipboard
+nnoremap <leader>y "*y
+nnoremap <leader>p "*p
+nnoremap <leader>Y "*y
+nnoremap <leader>P "*p
+
+" Move line up and down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+
 " Python
 autocmd Filetype python nmap <leader>d <Plug>(pydocstring)
 autocmd FileType python nmap <leader>p :Black<CR>
